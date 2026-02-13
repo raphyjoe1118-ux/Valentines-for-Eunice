@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        button {
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e62e5a;
+        }
+    </style>
+    <script>
+        function handleResponse(answer) {
+            if (answer === 'yes') {
+                alert('Yay! 💖 Thank you for being my Valentine!');
+            } else {
+                alert('Maybe next time 😔');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Will You Be My Valentine?</h1>
+    <button onclick="handleResponse('yes')">Yes 💖</button>
+    <button onclick="handleResponse('no')">No 💔</button>
+</body>
+</html>
